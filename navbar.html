@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colored Navbar</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f9;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(to right, #ffffff, #f8f9fb);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 0;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    /* Links */
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #2c3e50;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 6px;
+      transition: all 0.3s ease;
+    }
+
+    /* Hover effect */
+    .nav-links a:hover {
+      color: #ffffff;
+      background: linear-gradient(45deg, #007bff, #00c6ff);
+      border-radius: 6px;
+      padding: 8px 10px;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background: #ffffff;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      overflow: hidden;
+      min-width: 160px;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px;
+      font-size: 13px;
+      color: #333;
+      transition: 0.2s;
+    }
+
+    .dropdown a:hover {
+      background: #007bff;
+      color: #fff;
+    }
+
+    /* Show dropdown */
+    .nav-links li:hover .dropdown {
+      display: block;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <ul class="nav-links">
+      
+      <li>
+        <a href="#">ABOUT US ▾</a>
+        <div class="dropdown">
+          <a href="#">Vision</a>
+          <a href="#">Mission</a>
+        </div>
+      </li>
+
+      <li>
+        <a href="#">ACADEMICS ▾</a>
+        <div class="dropdown">
+          <a href="#">Courses</a>
+          <a href="#">Departments</a>
+        </div>
+      </li>
+
+      <li><a href="#">TRAINING & PLACEMENT</a></li>
+      <li><a href="#">ADMISSION</a></li>
+      <li><a href="#">MEDIA ▾</a></li>
+      <li><a href="#">ERP ▾</a></li>
+      <li><a href="#">CMS</a></li>
+      <li><a href="#">CONFERENCES ▾</a></li>
+      <li><a href="#">CODE-2K26</a></li>
+
+    </ul>
+  </nav>
+
+</body>
+</html>
